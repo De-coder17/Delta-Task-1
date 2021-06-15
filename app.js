@@ -30,6 +30,8 @@ const scoreSheet = document.querySelector("#scorekeeper");
 hardGame.style.display = "none";
 scoreSheet.style.display = "none";
 
+
+
 easyBtn.addEventListener("click" , function(){
     clickSound.play();
     easyGame.style.display = "inline";
@@ -214,6 +216,7 @@ function colorSwitch2(evt){
            lowerGridCells2[tpTile2 + 1].style.backgroundColor = "transparent";
            tpTile2 += 1;
            noOfMoves2 += 1;
+           checkHard();
        }
    
     }
@@ -224,6 +227,7 @@ function colorSwitch2(evt){
             lowerGridCells2[tpTile2 - 1].style.backgroundColor = "transparent";
             tpTile2 -= 1;
             noOfMoves2 += 1;
+            checkHard();
         }
 
     }
@@ -234,6 +238,7 @@ function colorSwitch2(evt){
             lowerGridCells2[tpTile2 + 6].style.backgroundColor = "transparent";
             tpTile2 += 6;
             noOfMoves2 += 1;
+            checkHard();
 
         }
     }
@@ -244,6 +249,7 @@ function colorSwitch2(evt){
             lowerGridCells2[tpTile2 - 6].style.backgroundColor = "transparent";
             tpTile2 -= 6;
             noOfMoves2 += 1;
+            checkHard();
 
         }
     }
@@ -266,6 +272,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile + 1].style.backgroundColor = "transparent";
             tpTile += 1;
             noOfMoves += 1;
+            checkEasy();
         }
     
     }
@@ -276,6 +283,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile - 1].style.backgroundColor = "transparent";
             tpTile -= 1;
             noOfMoves += 1;
+            checkEasy();
         }
 
     }
@@ -285,7 +293,8 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile].style.backgroundColor = evt.target.style.backgroundColor;
             lowerGridCells[tpTile + 5].style.backgroundColor = "transparent";
             tpTile += 5;
-            moves += 1;
+            noOfMoves += 1;
+            checkEasy();
 
         }
     }
@@ -295,7 +304,8 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile].style.backgroundColor = evt.target.style.backgroundColor;
             lowerGridCells[tpTile - 5].style.backgroundColor = "transparent";
             tpTile -= 5;
-            moves += 1;
+            noOfMoves += 1;
+            checkEasy();
 
         }
     }
@@ -368,6 +378,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile + 1].style.backgroundColor = "transparent";
             tpTile += 1;
             noOfMoves += 1
+            checkEasy();
         }
     
     }
@@ -378,6 +389,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile - 1].style.backgroundColor = "transparent";
             tpTile -= 1;
             noOfMoves += 1
+            checkEasy();
         }
 
     }
@@ -388,6 +400,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile + 5].style.backgroundColor = "transparent";
             tpTile += 5;
             noOfMoves += 1
+            checkEasy();
 
         }
     }
@@ -398,6 +411,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells[tpTile - 5].style.backgroundColor = "transparent";
             tpTile -= 5;
             noOfMoves += 1;
+            checkEasy();
 
         }
     }
@@ -449,6 +463,7 @@ for( lowerGridCell of lowerGridCells){
             lowerGridCells2[tpTile2 + 1].style.backgroundColor = "transparent";
             tpTile2 += 1;
             noOfMoves2 += 1;
+            checkHard();
         }
     
      }
@@ -459,6 +474,7 @@ for( lowerGridCell of lowerGridCells){
              lowerGridCells2[tpTile2 - 1].style.backgroundColor = "transparent";
              tpTile2 -= 1;
              noOfMoves2 += 1;
+             checkHard();
          }
  
      }
@@ -469,6 +485,7 @@ for( lowerGridCell of lowerGridCells){
              lowerGridCells2[tpTile2 + 6].style.backgroundColor = "transparent";
              tpTile2 += 6;
              noOfMoves2 += 1;
+             checkHard();
  
          }
      }
@@ -479,6 +496,7 @@ for( lowerGridCell of lowerGridCells){
              lowerGridCells2[tpTile2 - 6].style.backgroundColor = "transparent";
              tpTile2 -= 6;
              noOfMoves2 += 1;
+             checkHard();
  
          }
      }
@@ -490,8 +508,8 @@ for( lowerGridCell of lowerGridCells){
  // 
 
  }
-
- // easy mode win check
+function checkEasy(){
+      // easy mode win check
  for( let m  = 0; m < 9; m++){
     if(upperGridCells[m].style.backgroundColor !== playAreas[m].style.backgroundColor ){
         isGameOver = false;
@@ -511,8 +529,10 @@ if(isGameOver == true){
     
 }
 
-// hard Mode win check
-
+}
+ 
+function checkHard(){
+     
 for( let q = 0; q < 16; q++){
     if(upperGridCells2[q].style.backgroundColor !== playAreas2[q].style.backgroundColor){
         isGameOver2 = false;
@@ -531,6 +551,9 @@ if(isGameOver2 == true){
     scoreSheet.style.display = "inline";
 }
 
+
+}
+// hard Mode win check
 
 
 btnInsert.addEventListener("click" , function(){
