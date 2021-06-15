@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Mode</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <section id="header">
+        <h1>Color Tiles</h1>
+        <h2 id=>Try and match the higlighted section of the lower grid with the upper grid</h2>
+      </section>
+      <h2 id="winningText"> Congrats!! You completed the game</h2>
+      <h3 id="moves"> Number of Moves:</h3>
+
+      <button id="Easy-Mode">Easy Mode</button>
+      <button id="Hard-Mode">Hard Mode</button>
+  
+      <button id="reset-game"> Reset Game</button>
+      <section>
+          <div class="conatiner">
+              <p><span id="seconds">00</span>: <span id="tens"></span></p>
+              <button id="button-start">Start</button>
+              <button id="button-stop">Stop</button>
+              <button id="button-reset">Reset Timer</button>
+          </div>
+      </section>
+    <section id="scorekeeper">
+        <fieldset >
+            <legend>Enter player name</legend>
+            <input type="text" id="playername" placeholder="Player's name...">
+            <button id="btnInsert">Submit Name</button>
+        </fieldset>
+        <fieldset >
+            <legend>Score list</legend>
+            <div id="scoreOutput"></div>
+        </fieldset>
+    </section>
+    <section id="easyGame">
+      <div class = upperGrid>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>
+          <div class="ugcell"></div>   
+      </div>
+      
+      <div class="lowerGrid">
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell playArea" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+          <div class="lgcell" ></div>
+      </div>
+    </section>
+
+    <section id="hardGame">
+        <div class = upperGrid2>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>
+            <div class="ugcell2"></div>   
+        </div>
+        
+        <div class="lowerGrid2">
+            <div class="lgcell2"></div>
+            <div class="lgcell2"></div>
+            <div class="lgcell2"></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2 playArea2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+            <div class="lgcell2" ></div>
+        </div>
+    </section>
+
+    
+
+    <script src="app.js"></script>
+</body>
+</html>

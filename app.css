@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #a8dadc ;
+}
+
+#header{
+    background-color: #457b9d;
+}
+
+h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: aquamarine;
+    height: 30px;
+}
+body{
+    background-color: #1d3557;
+}
+
+.upperGrid {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    margin: auto;
+    grid-template-rows: 40px 40px 40px;
+    grid-gap: 2px;
+    justify-content: center;
+
+}
+
+.ugcell {
+    border: 1px solid black;
+}
+
+.lgcell {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.lowerGrid{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    grid-gap: 3px;
+}
+
+.playArea {
+    border: 5px solid black;   
+}
+
+.upperGrid2{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px;
+    margin: auto;
+    grid-template-rows: 40px 40px 40px 40px;
+    grid-gap: 2px;
+    justify-content: center;
+}
+
+.ugcell2{
+    border: 1px solid black;
+}
+
+.lowerGrid2{
+    display: grid;
+    grid-template-columns: 70px 70px 70px 70px 70px 70px;
+    grid-template-rows: 70px 70px 70px 70px 70px 70px;
+    justify-content: center;
+    margin: auto;
+    padding-top: 50px;
+    grid-gap: 3px;
+}
+
+.playArea2{
+    border: 5px solid black;
+}
+
+
+.lgcell2{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.playArea2{
+    border: 5px solid black;
+}
+
+fieldset{
+    width: 300px;
+    margin-top: 30px;
+    color: #a8dadc;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (max-width: 500px ){
+    h2{
+        font-size: 12px;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .upperGrid {
+        
+        grid-template-columns: 25px 25px 25px;
+        margin-top: 20px;
+        grid-template-rows: 25px 25px 25px ;
+        
+    }
+    .lowerGrid{
+       
+        grid-template-columns: 50px 50px 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px 50px 50px;
+        
+    }
+
+    .upperGrid2{
+        
+        grid-template-columns: 20px 20px 20px 20px;
+        margin-top: 20px;
+        grid-template-rows: 20px 20px 20px 20px;
+       
+    }
+
+    .lowerGrid2{
+        
+        grid-template-columns: 45px 45px 45px 45px 45px 45px;
+        grid-template-rows: 45px 45px 45px 45px 45px 45px;
+       
+    }
+
+    
+}
+

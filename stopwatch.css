@@ -1,0 +1,30 @@
+.container {
+    width: 800px;
+    margin: 30px auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#seconds #tens{
+    font-size: 2em;
+}
+
+button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: lightcyan;
+}
+
+button:hover{
+    background: Black;
+    color: whitesmoke;
+    font-weight: bold;
+    
+}
+p{
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lightcyan;
+}
+
